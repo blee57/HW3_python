@@ -92,3 +92,16 @@ print(f'{candidatelist[3]}: {index3_percentage} ({countofindex3})')
 print("----------------------------------------------------------")
 print(f'Winner: {winnercandidate}')
 
+textpath = os.path.join('Analysis','Analysis.txt')
+
+with open(textpath, 'w') as f: 
+    f.write("Election Results" + '\n')
+    f.write("----------------------------------------------------------" + '\n')
+    f.write(f'Total Votes: {countofvoters}' + '\n')
+    f.write("----------------------------------------------------------" + '\n')
+    f.write(f'{candidatelist[0]}: {index0_percentage} ({countofindex0})' + '\n')
+    f.write(f'{candidatelist[1]}: {index1_percentage} ({countofindex1})' + '\n')
+    f.write(f'{candidatelist[2]}: {index2_percentage} ({countofindex2})' + '\n')
+    f.write(f'{candidatelist[3]}: {index3_percentage} ({countofindex3})' + '\n')
+    f.write("----------------------------------------------------------" + '\n')
+    f.write(f'Winner: {winnercandidate}')

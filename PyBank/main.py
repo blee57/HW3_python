@@ -85,5 +85,12 @@ print(f'Total Months: {countofmonths}')
 print(f'Total: ${totalamount}')
 print(f'Average Change: ${averagediff}')
 
+textpath = os.path.join('Analysis','Analysis.txt')
 
-
+with open(textpath, 'w') as f: 
+    f.write("Financial Analysis" + '\n')
+    f.write("----------------------------------------------------------" + '\n')
+    f.write(f'Total Months: {countofmonths}' + '\n')
+    f.write(f'Total: ${totalamount}' + '\n')
+    f.write(f'Average Change: ${averagediff}' + '\n')
+    
